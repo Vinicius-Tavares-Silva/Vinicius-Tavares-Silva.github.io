@@ -52,12 +52,21 @@ body {
     background-color: gainsboro;
 }
 
-.best_skills {
+.soft_skills {
     text-decoration: underline;
     line-height: 25px;
     font-weight: 600;
 }
 
-.learning_skills {
+.hard_skills {
     line-height: 25px;
+    border: solid;
+    margin: 5px;
+    padding: 5px;
+}
+
+.skills_logo {
+    height: 60px;
+    vertical-align: top;
+    margin-left: 20px;
 }
