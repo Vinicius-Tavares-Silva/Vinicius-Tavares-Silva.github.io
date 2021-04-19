@@ -4,62 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio - Vinicius Tavares da Silva</title>
-    <style>
-        .hero_title {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        #Descricao {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        
-        body {
-            background-color: gainsboro;
-        }
-        
-        .best_skills {
-            text-decoration: underline;
-            line-height: 25px;
-            font-weight: 600;
-        }
-        
-        .learning_skills {
-            line-height: 25px;
-        }
-        
-        #Foto {
-            border-radius: 10%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 class="hero_title">Vinicius Tavares da Silva</h1>
-    <ul>
-        <li><a href="#Foto">Foto de Perfil</a></li>
-        <li><a href="#Descricao">Sobre mim</a></li>
-        <li><a href="#Skills">Habilidades</a></li>
-        <li><a href="https://www.youtube.com/channel/UClu474HMt895mVxZdlIHXEA" target="_blank">Conteudo que gosto de acompanhar!</a></li>
-    </ul>
+    <div class="hero">
+        <h1 class="hero_title">Vinicius Tavares da Silva</h1>
+        <ul>
+            <li><a href="#Foto">Foto de Perfil</a></li>
+            <li><a href="#Descricao">Sobre mim</a></li>
+            <li><a href="#Skills">Habilidades</a></li>
+            <li><a href="https://www.youtube.com/channel/UClu474HMt895mVxZdlIHXEA" target="_blank">Conteudo que gosto de acompanhar!</a></li>
+        </ul>
+    </div>
     <hr>
-    <img id="Foto" width="500px" src="./Foto_vini_2.jpeg" alt="Foto do Vinicius Tavares da Silva">
-    <p id="Descricao">Ola! <br> Eu sou o Vinicius, sou brasileiro, nasci e vivo até hoje na cidade de São Paulo-SP, sou formado em Egenharia de Controle e Automação pelo Instituto Maua de Tecnologia e atualmente <strong>estudo desenvolvimento Web</strong>, e esse é meu
-        Portfolio!!
-    </p>
+    <div class="description">
+        <img id="Foto" src="./Foto_vini_2.jpeg" alt="Foto do Vinicius Tavares da Silva">
+        <div class="description_text">
+            <h2>Ola, sou o Vinicius!</h2>
+            <p>Sou brasileiro, nasci e vivo até hoje na cidade de São Paulo-SP, sou formado em Egenharia de Controle e Automação pelo Instituto Maua de Tecnologia e atualmente <strong>estudo desenvolvimento Web</strong>, e esse é meu Portfolio!!</p>
+        </div>
+        <img class="description_logo" src="./images/codding.png" alt="simbolo de programação">
+    </div>
     <hr>
-    <h3 id="Skills">Principais Caracteristicas</h3>
-    <ul>
-        <li class="best_skills">Colaboração</li>
-        <li class="best_skills">Vontade de aprender</li>
-    </ul>
-    <h3>Habilidades em desenvolvimento</h3>
-    <ul>
-        <li class="learning_skills">HTML</li>
-        <li class="learning_skills">CSS</li>
-        <li class="learning_skills">Javascript</li>
-        <li class="learning_skills">Python</li>
-    </ul>
-
+    <div class="skills">
+        <h3>Soft Skills</h3>
+        <ul>
+            <li class="soft_skills">Colaboração
+                <img class="skills_logo" src="./images/colab.png" alt="logo html">
+            </li>
+            <li class="soft_skills">Vontade de aprender
+                <img class="skills_logo" src="./images/aprender.png" alt="logo html">
+            </li>
+            <li class="soft_skills">Proatividade
+                <img class="skills_logo" src="./images/html5.png" alt="logo html">
+            </li>
+            <li class="soft_skills">Pensamento critico
+                <img class="skills_logo" src="./images/html5.png" alt="logo html">
+            </li>
+        </ul>
+        <h3>Hard Skills</h3>
+        <ul>
+            <li class="hard_skills">HTML
+                <img class="skills_logo" src="./images/html5.png" alt="logo html">
+            </li>
+            <li class="hard_skills">CSS
+                <img class="skills_logo" src="./images/css.png" alt="logo html">
+            </li>
+            <li class="hard_skills">Javascript
+                <img class="skills_logo" src="./images/nodejs.png" alt="logo html">
+            </li>
+            <li class="hard_skills">Python
+                <img class="skills_logo" src="./images/python.png" alt="logo html">
+            </li>
+            <li class="hard_skills">SQL
+                <img class="skills_logo" src="./images/html5.png" alt="logo html">
+            </li>
+        </ul>
+    </div>
+    <footer class="find_me">
+        <h3>Onde me encontrar?</h3>
+        <ul>
+            <li>LinkedIn</li>
+            <li>Instagram</li>
+            <li>Git Hub</li>
+        </ul>
+    </footer>
 </body>
 
 </html>
