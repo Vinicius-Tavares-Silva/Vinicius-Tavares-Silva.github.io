@@ -1,75 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolio - Vinicius Tavares da Silva</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="hero">
-        <h1 class="hero_title">Vinicius Tavares da Silva</h1>
-        <ul>
-            <li><a href="#Foto">Foto de Perfil</a></li>
-            <li><a href="#Descricao">Sobre mim</a></li>
-            <li><a href="#Skills">Habilidades</a></li>
-            <li><a href="https://www.youtube.com/channel/UClu474HMt895mVxZdlIHXEA" target="_blank">Conteudo que gosto de acompanhar!</a></li>
-        </ul>
-    </div>
-    <hr>
-    <div class="description">
-        <img id="Foto" src="./Foto_vini_2.jpeg" alt="Foto do Vinicius Tavares da Silva">
-        <div class="description_text">
-            <h2>Ola, sou o Vinicius!</h2>
-            <p>Sou brasileiro, nasci e vivo até hoje na cidade de São Paulo-SP, sou formado em Egenharia de Controle e Automação pelo Instituto Maua de Tecnologia e atualmente <strong>estudo desenvolvimento Web</strong>, e esse é meu Portfolio!!</p>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Vinícius Tavares da Silva</h1>
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre-mim">Sobre mim</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#social">Onde me encontrar</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-container" id="inicio">
+        <img class="profile-photo" src="Images/Foto_vini_2.jpeg" alt="" />
+        <h3>Estudante de Desenvolvimento Web</h3>
+        <h3>26 Anos</h3>
+      </section>
+      <section class="about-me-container" id="sobre-mim">
+        <p class="description">
+          "Sou brasileiro, formado em Engenharia de Controle e Automação pelo
+          Instituto Mauá de Tecnologia e atualmente estudo desenvolvimento Web
+          pela Trybe, e esse é meu Portfolio!!"
+        </p>
+        <div class="about-me-bullets-container">
+          <div class="about-me-bullets">
+            <i class="bi bi-geo-alt-fill"></i>
+            <h4>Localidade</h4>
+            <p>São Paulo/SP</p>
+          </div>
+          <div class="about-me-bullets">
+            <i class="bi bi-book"></i>
+            <h4>Formação Acadêmica</h4>
+            <p>Instituto Mauá de Tecnologia - 2013/2018</p>
+            <p>Institute of Technology Sydney (Australia) - 2015/2015</p>
+            <p>Trybe - 2021</p>
+          </div>
+          <div class="about-me-bullets">
+            <i class="bi bi-briefcase-fill"></i>
+            <h4>Experiência Profissional</h4>
+            <p>Estagio - Itau Unibanco SA - 2018/2019</p>
+            <p>Analista Jr. - Itau Unibanco SA - 2019/2021</p>
+          </div>
         </div>
-        <img class="description_logo" src="./images/codding.png" alt="simbolo de programação">
-    </div>
-    <hr>
-    <div class="skills">
-        <h3>Soft Skills</h3>
-        <ul>
-            <li class="soft_skills">Colaboração
-                <img class="skills_logo" src="./images/colab.png" alt="logo html">
+      </section>
+      <section class="skills" id="habilidades">
+        <div class="skills-container">
+          <img class="soft-skills-img" src="Images/soft-skill-2.png" alt="" />
+          <h4>Soft Skills</h4>
+          <ul class="skills-list">
+            <li class="soft-skill">Colaboração</li>
+            <li class="soft-skill">Vontade de aprender</li>
+            <li class="soft-skill">Proatividade</li>
+            <li class="soft-skill">Pensamento critico</li>
+          </ul>
+        </div>
+        <div class="skills-container">
+          <img class="hard-skills-img" src="Images/hard-skill.png" alt="" />
+          <h4>Hard Skills</h4>
+          <ul class="skills-list">
+            <li class="hard-skill">HTML</li>
+            <li class="hard-skill">CSS</li>
+            <li class="hard-skill">React</li>
+            <li class="hard-skill">Javascript</li>
+            <li class="hard-skill">Python</li>
+            <li class="hard-skill">SQL</li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <p>Me siga nas redes Sociais!</p>
+        <div class="social-container" id="social">
+          <ul class="social-list">
+            <li>
+              <a target="_blank" href="">
+                <i class="bi bi-github"></i>
+              </a>
             </li>
-            <li class="soft_skills">Vontade de aprender
-                <img class="skills_logo" src="./images/aprender.png" alt="logo html">
+            <li>
+              <a target="_blank" href="">
+                <i class="bi bi-facebook"></i>
+              </a>
             </li>
-            <li class="soft_skills">Proatividade
-                <img class="skills_logo" src="./images/html5.png" alt="logo html">
+            <li>
+              <a target="_blank" href="">
+                <i class="bi bi-linkedin"></i>
+              </a>
             </li>
-            <li class="soft_skills">Pensamento critico
-                <img class="skills_logo" src="./images/html5.png" alt="logo html">
-            </li>
-        </ul>
-        <h3>Hard Skills</h3>
-        <ul>
-            <li class="hard_skills">HTML
-                <img class="skills_logo" src="./images/html5.png" alt="logo html">
-            </li>
-            <li class="hard_skills">CSS
-                <img class="skills_logo" src="./images/css.png" alt="logo html">
-            </li>
-            <li class="hard_skills">Javascript
-                <img class="skills_logo" src="./images/nodejs.png" alt="logo html">
-            </li>
-            <li class="hard_skills">Python
-                <img class="skills_logo" src="./images/python.png" alt="logo html">
-            </li>
-            <li class="hard_skills">SQL
-                <img class="skills_logo" src="./images/html5.png" alt="logo html">
-            </li>
-        </ul>
-    </div>
-    <footer class="find_me">
-        <h3>Onde me encontrar?</h3>
-        <ul>
-            <li>LinkedIn</li>
-            <li>Instagram</li>
-            <li>Git Hub</li>
-        </ul>
-    </footer>
-</body>
-
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
