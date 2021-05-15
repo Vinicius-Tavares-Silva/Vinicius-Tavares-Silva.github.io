@@ -20,6 +20,7 @@ header{
 }
 
 nav{
+ display: flex;
  align-self: center;
 }
 
@@ -38,15 +39,15 @@ nav a:hover{
  background-image: url(Images/black-mouse-wp.jpg);
  background-size: cover;
  height: 100vh;
- align-items: center;
  flex-direction: column;
+ align-items: center;
  flex-wrap: wrap;
+ justify-content: center;
 }
 
 .profile-photo{
  width: 300px;
  border-radius: 100%;
- margin-top: 250px;
  margin-bottom: 20px;
  border:groove #44738D;
 }
