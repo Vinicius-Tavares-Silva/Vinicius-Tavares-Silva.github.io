@@ -93,6 +93,7 @@ nav a:hover{
 
 .about-me-bullets{
  padding-top: 20px;
+ width: 420px;
 
 }
 
@@ -166,4 +167,21 @@ footer p{
 .social-list li{
  font-size: 25px;
  margin: 0 5px;
+}
+
+@media screen and (max-width: 450px) {
+ header{
+  padding-left: 20px;
+ }
+ header h1{
+  font-size: x-large;
+ }
+
+ header  nav{
+  padding-top: 10px;
+ }
+
+ header nav a{
+  font-size: small;
+ }
 }
