@@ -34,7 +34,7 @@ a {
   margin-right: 10px;
 }
 
-nav a:hover {
+a:hover {
   font-weight: bold;
 }
 
@@ -141,38 +141,45 @@ nav a:hover {
   width: 150px;
 }
 
-.projects-cards-container{
-    display: flex;
-    padding: 20px 30px;
+.projects-cards-container {
+  display: flex;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.card{
-    max-width: 420px;
-    border-radius: 3px;
-    box-shadow: 1px 1px 3px black;
+.card {
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px black;
+  margin: 15px;
 }
 
 .card-content {
   display: flex;
+  max-width: 750px;
 }
 
-.card-text-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: justify;
+.card-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: justify;
+  padding: 5px;
 }
 
-.card-links{
-    display: flex;
-    justify-content: space-evenly;
+.card-links {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .project-img {
-  width: 100px;
+  width: 350px;
 }
 
 footer {
+  background-color: #44738d;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,7 +191,14 @@ footer p {
   margin-bottom: 10px;
 }
 
+footer a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+}
+
 .social-list {
+  color: #fff;
   display: flex;
   list-style: none;
   justify-content: center;
@@ -193,8 +207,25 @@ footer p {
 }
 
 .social-list li {
+  color: #fff;
   font-size: 25px;
   margin: 0 5px;
+}
+
+@media screen and (max-width: 750px) {
+  .card-content {
+    display: flex;
+    max-width: 350px;
+    flex-direction: column;
+  }
+
+  .card-text-content h3 {
+    text-align: center;
+  }
+
+  .card-links {
+    margin-top: 5px;
+  }
 }
 
 @media screen and (max-width: 450px) {
